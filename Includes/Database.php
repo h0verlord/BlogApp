@@ -1,19 +1,28 @@
-<?php    
-    
-    
+<?php  
+    class Database{
         
-        $databaseConfig['dbHost'] = "localhost";
-        $databaseConfig['dbUser'] = "root";
-        $databaseConfig['dbPwd'] = "";
-        $databaseConfig['dbName'] = "blogappmasterdb";
+        public $connection;
+        
+        public function __construct(){
+                $dbHost= "localhost";
+                $dbUser= "root";
+                $dbPwd= "";
+                $dbName = "blogappmasterdb";     
+            
+            if(!$this->connection){
+                
+                $this->connection = new mysqli($dbHost, $dbUser, $dbPwd, $dbName);
 
-        foreach($databaseConfig as $key => $value){
+            }           
+                
+        }           
+
+    }
+
+
     
-        define(strtoupper($key), $value);
-    
-        }
         
-        $connection = mysqli_connect(DBHOST, DBUSER, DBPWD, DBNAME);
+        
         
         
        
