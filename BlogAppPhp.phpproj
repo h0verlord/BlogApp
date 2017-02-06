@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>BlogAppPhp</Name>
+    <ProjectGuid>{b39bbcab-d662-42b6-b823-95377f85fa10}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Category\CreateCategory.php" />
+    <Compile Include="Admin\Category\EditCategory.php" />
+    <Compile Include="Admin\css\bootstrap-theme.css" />
+    <Compile Include="Admin\css\bootstrap-theme.css.map" />
+    <Compile Include="Admin\css\bootstrap-theme.min.css" />
+    <Compile Include="Admin\css\bootstrap-theme.min.css.map" />
+    <Compile Include="Admin\css\bootstrap.css" />
+    <Compile Include="Admin\css\bootstrap.css.map" />
+    <Compile Include="Admin\css\bootstrap.min.css" />
+    <Compile Include="Admin\css\bootstrap.min.css.map" />
+    <Compile Include="Admin\css\custom.css" />
+    <Compile Include="Admin\fonts\glyphicons-halflings-regular.eot" />
+    <Compile Include="Admin\fonts\glyphicons-halflings-regular.svg" />
+    <Compile Include="Admin\fonts\glyphicons-halflings-regular.ttf" />
+    <Compile Include="Admin\fonts\glyphicons-halflings-regular.woff" />
+    <Compile Include="Admin\fonts\glyphicons-halflings-regular.woff2" />
+    <Compile Include="Admin\Includes\CategoryEdits.php" />
+    <Compile Include="Admin\Includes\PostEdits.php" />
+    <Compile Include="Admin\Includes\TagEdits.php" />
+    <Compile Include="Admin\js\bootstrap.js" />
+    <Compile Include="Admin\js\bootstrap.min.js" />
+    <Compile Include="Admin\js\npm.js" />
+    <Compile Include="Admin\Post\CreatePost.php" />
+    <Compile Include="Admin\Post\EditPost.php" />
+    <Compile Include="Admin\category.php" />
+    <Compile Include="Admin\index.php" />
+    <Compile Include="css\bootstrap-theme.css" />
+    <Compile Include="css\bootstrap-theme.css.map" />
+    <Compile Include="css\bootstrap-theme.min.css" />
+    <Compile Include="css\bootstrap-theme.min.css.map" />
+    <Compile Include="css\bootstrap.css" />
+    <Compile Include="css\bootstrap.css.map" />
+    <Compile Include="css\bootstrap.min.css" />
+    <Compile Include="css\bootstrap.min.css.map" />
+    <Compile Include="css\custom.css" />
+    <Compile Include="fonts\glyphicons-halflings-regular.eot" />
+    <Compile Include="fonts\glyphicons-halflings-regular.svg" />
+    <Compile Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Compile Include="fonts\glyphicons-halflings-regular.woff" />
+    <Compile Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Compile Include="images\img050.jpg" />
+    <Compile Include="classes\Category.php" />
+    <Compile Include="classes\Database.php" />
+    <Compile Include="classes\Post.php" />
+    <Compile Include="js\bootstrap.js" />
+    <Compile Include="js\bootstrap.min.js" />
+    <Compile Include="js\npm.js" />
+    <Compile Include=".gitignore" />
+    <Compile Include="category.php" />
+    <Compile Include="index.php" />
+    <Compile Include="layout\head.php" />
+    <Compile Include="layout\navigation.php" />
+    <Compile Include="layout\posts.php" />
+    <Compile Include="layout\sidebar.php" />
+    <Compile Include="login.php" />
+    <Compile Include="postDetail.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\Category" />
+    <Folder Include="Admin\css" />
+    <Folder Include="Admin\fonts" />
+    <Folder Include="Admin\Includes" />
+    <Folder Include="Admin\js" />
+    <Folder Include="Admin\Post" />
+    <Folder Include="Admin" />
+    <Folder Include="css" />
+    <Folder Include="fonts" />
+    <Folder Include="images" />
+    <Folder Include="classes\" />
+    <Folder Include="js" />
+    <Folder Include="layout\" />
+  </ItemGroup>
+</Project>
