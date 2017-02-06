@@ -35,10 +35,9 @@
     <Compile Include="Admin\js\npm.js" />
     <Compile Include="Admin\layout\head.php" />
     <Compile Include="Admin\layout\navigation.php" />
-    <Compile Include="Admin\Post\CreatePost.php" />
-    <Compile Include="Admin\Post\EditPost.php" />
     <Compile Include="Admin\category.php" />
     <Compile Include="Admin\index.php" />
+    <Compile Include="Admin\layout\update_form.php" />
     <Compile Include="css\bootstrap-theme.css" />
     <Compile Include="css\bootstrap-theme.css.map" />
     <Compile Include="css\bootstrap-theme.min.css" />
@@ -75,7 +74,6 @@
     <Folder Include="Admin\fonts" />
     <Folder Include="Admin\js" />
     <Folder Include="Admin\layout\" />
-    <Folder Include="Admin\Post" />
     <Folder Include="Admin" />
     <Folder Include="css" />
     <Folder Include="fonts" />
