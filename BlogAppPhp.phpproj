@@ -25,6 +25,7 @@
     <Compile Include="Admin\css\bootstrap.min.css" />
     <Compile Include="Admin\css\bootstrap.min.css.map" />
     <Compile Include="Admin\css\custom.css" />
+    <Compile Include="Admin\post\edit_post.php" />
     <Compile Include="Admin\fonts\glyphicons-halflings-regular.eot" />
     <Compile Include="Admin\fonts\glyphicons-halflings-regular.svg" />
     <Compile Include="Admin\fonts\glyphicons-halflings-regular.ttf" />
@@ -36,8 +37,10 @@
     <Compile Include="Admin\layout\head.php" />
     <Compile Include="Admin\layout\navigation.php" />
     <Compile Include="Admin\category.php" />
-    <Compile Include="Admin\index.php" />
+    <Compile Include="Admin\post.php" />
     <Compile Include="Admin\layout\update_form.php" />
+    <Compile Include="Admin\post\add_post.php" />
+    <Compile Include="Admin\post\view_posts.php" />
     <Compile Include="css\bootstrap-theme.css" />
     <Compile Include="css\bootstrap-theme.css.map" />
     <Compile Include="css\bootstrap-theme.min.css" />
@@ -75,6 +78,7 @@
     <Folder Include="Admin\js" />
     <Folder Include="Admin\layout\" />
     <Folder Include="Admin" />
+    <Folder Include="Admin\post\" />
     <Folder Include="css" />
     <Folder Include="fonts" />
     <Folder Include="images" />

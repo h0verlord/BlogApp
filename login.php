@@ -46,7 +46,7 @@ if(isset($_POST['login'])){
         header("Location: index.php");
         
     }  elseif ($username == $DBuserName && $password == $passwd) {
-        header ("Location: Admin/index.php");
+        header ("Location: Admin/post.php");
     }
     else{
         header ("Location: index.php");

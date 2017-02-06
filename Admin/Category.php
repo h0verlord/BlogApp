@@ -69,6 +69,17 @@ include "layout/navigation.php";
             </table>
         </div>
         <div class="col-xs-6">
+
+            <?php
+            if (isset($_GET['edit']))
+            {
+                $cat_id = $_GET['edit'];
+
+                include "layout/update_form.php";
+            }
+            
+            
+            ?>
             <!--ADD FORM-->
             <?php
             $date = date("Y-m-d");
