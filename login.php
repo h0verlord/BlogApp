@@ -22,7 +22,7 @@ if(isset($_POST['login'])){
     // $hashAndSalt = $hashFormat . $salt;
     // $password = crypt($password, $hashAndSalt);
 
-    $query = "SELECT * FROM users WHERE username = '{$username}' ";
+    $query = "SELECT * FROM user WHERE username = '{$username}' ";
     $selectUserQuery = mysqli_query($connection, $query);
 
     if(!$selectUserQuery){

@@ -22,8 +22,8 @@ class Post {
     }
 
     public function FetchPosts(){
-        $query = "SELECT u.username, c.catTitle, p.* FROM users u LEFT OUTER JOIN posts p ON u.id = p.userId LEFT OUTER join category c ON p.catId = c.id";
-        $selectAllPosts = $this->database->connection->query($query);
+        $query = "SELECT u.username, c.title, p.* FROM user u LEFT OUTER JOIN posts p ON u.id = p.userId LEFT OUTER join category c ON p.catId = c.id";
+        $selectAllPosts = $this -> database -> connection -> query($query);
 
             while($row = mysqli_fetch_assoc($selectAllPosts)){
 
@@ -51,7 +51,7 @@ class Post {
     }
 
     public function ViewPostsTable(){
-        $query = "SELECT u.username, c.catTitle, p.* FROM users u INNER JOIN posts p ON u.id = p.userId INNER join category c ON p.catId = c.id";
+        $query = "SELECT u.username, c.catTitle, p.* FROM user u INNER JOIN posts p ON u.id = p.userId INNER join category c ON p.catId = c.id";
 
         $selectAllPosts = $this->database->connection->query($query);
 

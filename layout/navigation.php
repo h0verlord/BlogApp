@@ -16,14 +16,22 @@
                 <li class="active">
                     <a href="#">Home</a>
                 </li>
-
                 <?php
-                $cat = new Category();
-                $row = $cat ->QueryCategories("LIMIT 3");
-                foreach ($row as $r)
+                $query = "Select * FROM category";
+                $select_all_cats = mysqli_query($connection, $query);
+
+                while ($row = mysqli_fetch_assoc($select_all_cats))
                 {
-                    echo "<li><a href='#'>{$r[catTitle]}</a></li>";
+                	$catTitle = $row['catTitle'];
+                    echo "<li><a href='#'>{$catTitle}</a></li>";
                 }
+
+                //$cat = new Category();
+                //$row = $cat ->QueryCategories("LIMIT 3");
+                //foreach ($row as $r)
+                //{
+                //    echo "<li><a href='#'>{$r[title]}</a></li>";
+                //}
 
                 ?>
             </ul>

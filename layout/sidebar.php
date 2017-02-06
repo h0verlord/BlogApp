@@ -28,11 +28,13 @@
             <div class="col-lg-12">
                 <ul class="list-unstyled">
                     <?php
-                    $cat = new Category();
-                    $row = $cat ->QueryCategories();
-                    foreach ($row as $r)
+                    $query = "Select * FROM category";
+                    $select_all_cats = mysqli_query($connection, $query);
+
+                    while ($row = mysqli_fetch_assoc($select_all_cats))
                     {
-                        echo "<li><a href='#'>{$r[catTitle]}</a></li>";
+                        $catTitle = $row['catTitle'];
+                        echo "<li><a href='#'>{$catTitle}</a></li>";
                     }
                     ?>
                 </ul>

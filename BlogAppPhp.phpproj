@@ -16,8 +16,6 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Admin\Category\CreateCategory.php" />
-    <Compile Include="Admin\Category\EditCategory.php" />
     <Compile Include="Admin\css\bootstrap-theme.css" />
     <Compile Include="Admin\css\bootstrap-theme.css.map" />
     <Compile Include="Admin\css\bootstrap-theme.min.css" />
@@ -32,12 +30,11 @@
     <Compile Include="Admin\fonts\glyphicons-halflings-regular.ttf" />
     <Compile Include="Admin\fonts\glyphicons-halflings-regular.woff" />
     <Compile Include="Admin\fonts\glyphicons-halflings-regular.woff2" />
-    <Compile Include="Admin\Includes\CategoryEdits.php" />
-    <Compile Include="Admin\Includes\PostEdits.php" />
-    <Compile Include="Admin\Includes\TagEdits.php" />
     <Compile Include="Admin\js\bootstrap.js" />
     <Compile Include="Admin\js\bootstrap.min.js" />
     <Compile Include="Admin\js\npm.js" />
+    <Compile Include="Admin\layout\head.php" />
+    <Compile Include="Admin\layout\navigation.php" />
     <Compile Include="Admin\Post\CreatePost.php" />
     <Compile Include="Admin\Post\EditPost.php" />
     <Compile Include="Admin\category.php" />
@@ -74,11 +71,10 @@
     <Compile Include="postDetail.php" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Admin\Category" />
     <Folder Include="Admin\css" />
     <Folder Include="Admin\fonts" />
-    <Folder Include="Admin\Includes" />
     <Folder Include="Admin\js" />
+    <Folder Include="Admin\layout\" />
     <Folder Include="Admin\Post" />
     <Folder Include="Admin" />
     <Folder Include="css" />
